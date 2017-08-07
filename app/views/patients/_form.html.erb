@@ -1,0 +1,9 @@
+<%= form_for ([@doctor, @patient]) do |f|  %>
+<p><%= f.label:name %></p>
+<p><%= f.text_field:name%></p><br>
+<p><%= f.label:sex %></p>
+<p><%= f.text_field:sex %></p><br>
+<p><%= f.label:insurance_N0 %></p>
+<p><%= f.text_field:insurance_N0 %></p>
+<p><%= f.submit %></p>
+<% end %>

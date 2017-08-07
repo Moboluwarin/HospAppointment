@@ -1,0 +1,8 @@
+<h2>Available Doctors</h2>
+  <% @doctors.each do |doctor| %>
+  <div class="panel-body">
+  <p><%= link_to doctor.name, doctor %></p><%= link_to 'Edit', edit_doctor_path(doctor) %>
+  <%= link_to "Delete", doctor_path(doctor), method: :delete, data: {confirm: "Are you sure?"} %>
+  </div>
+  <% end %>
+  <div><%=link_to "[New Doctor]", new_doctor_url%></div>

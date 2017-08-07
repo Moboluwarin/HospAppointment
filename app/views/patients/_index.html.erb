@@ -1,0 +1,6 @@
+<u>My Patients</u>
+<ul>
+  <li><% @doctor.patients.each do |patient| %>
+  <p><%= link_to patient.name, doctor_patient_path(@doctor, patient) %></P>
+  <% end %></li>
+</ul>

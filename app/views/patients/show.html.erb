@@ -1,0 +1,3 @@
+<p><%= @patient.name %></p>
+<%= link_to "Back", doctor_path(@doctor) %>
+<%= link_to "Delete", doctor_patient_path(@doctor, @patient), method: :delete, data: {confirm: "Are you sure?"} %>
